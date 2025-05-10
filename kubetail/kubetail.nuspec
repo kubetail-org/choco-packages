@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>kubetail</id>
+    <version>0.5.1</version>
+    <packageSourceUrl>https://github.com/kubetail-org/choco-packages/tree/main/kubetail</packageSourceUrl>
+    <owners>Andres Morey</owners>
+    <title>Kubetail (CLI)</title>
+    <authors>Kubetail</authors>
+    <projectUrl>https://www.kubetail.com</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/chocolatey-community/chocolatey-packages@5a8c40781821bbd2746754b7ce723938090bb7c6/icons/kubernetes-cli.png</iconUrl>
+    <iconUrl>https://assets.kubetail.com/choco/icon.cd5e01aa.png</iconUrl>
+    <copyright>(c) 2024 Andres Morey</copyright>
+    <licenseUrl>https://github.com/kubetail-org/kubetail/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/kubetail-org/kubetail</projectSourceUrl>
+    <docsUrl>https://www.kubetail.com/docs</docsUrl>
+    <bugTrackerUrl>https://github.com/kubetail-org/kubetail/issues</bugTrackerUrl>
+    <tags>kubernetes docker logs monitoring observability</tags>
+    <summary>Kubetail is a real-time logging dashboard for Kubernetes</summary>
+    <description><![CDATA[## Kubetail (CLI)
+### Introduction
+
+The Kubetail CLI tool (kubetail) acts as an entry point into Kubetail on your desktop. Using the CLI tool you can start/stop the Kubetail Dashboard and perform other Kubetail-related operations on your cluster.
+
+### Sub-commands
+
+kubetail cluster
+kubetail completion
+kubetail help
+kubetail logs
+kubetail serve
+]]></description>
+    <releaseNotes>https://github.com/kubetail-org/kubetail/compare/cli/v0.5.0...cli/v0.5.1</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
