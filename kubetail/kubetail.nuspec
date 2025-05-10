@@ -9,7 +9,6 @@
     <title>Kubetail (CLI)</title>
     <authors>Kubetail</authors>
     <projectUrl>https://www.kubetail.com</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/chocolatey-community/chocolatey-packages@5a8c40781821bbd2746754b7ce723938090bb7c6/icons/kubernetes-cli.png</iconUrl>
     <iconUrl>https://assets.kubetail.com/choco/icon.cd5e01aa.png</iconUrl>
     <copyright>(c) 2024 Andres Morey</copyright>
     <licenseUrl>https://github.com/kubetail-org/kubetail/blob/main/LICENSE</licenseUrl>
