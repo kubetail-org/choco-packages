@@ -3,20 +3,20 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>kubetail</id>
-    <version>0.5.1</version>
-    <packageSourceUrl>https://github.com/kubetail-org/choco-packages/tree/main/kubetail</packageSourceUrl>
+    <version>0.7.3</version>
+    <packageSourceUrl>https://github.com/kubetail-org/choco-packages</packageSourceUrl>
     <owners>Andres Morey</owners>
     <title>Kubetail (CLI)</title>
     <authors>Kubetail</authors>
     <projectUrl>https://www.kubetail.com</projectUrl>
     <iconUrl>https://assets.kubetail.com/choco/icon.cd5e01aa.png</iconUrl>
-    <copyright>(c) 2024 Andres Morey</copyright>
+    <copyright>(c) 2024-2025 Andres Morey</copyright>
     <licenseUrl>https://github.com/kubetail-org/kubetail/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/kubetail-org/kubetail</projectSourceUrl>
     <docsUrl>https://www.kubetail.com/docs</docsUrl>
     <bugTrackerUrl>https://github.com/kubetail-org/kubetail/issues</bugTrackerUrl>
-    <tags>kubernetes docker logs monitoring observability</tags>
+    <tags>kubernetes docker logs monitoring observability real-time</tags>
     <summary>Kubetail is a real-time logging dashboard for Kubernetes</summary>
     <description><![CDATA[## Kubetail (CLI)
 ### Introduction
@@ -31,7 +31,7 @@ kubetail help
 kubetail logs
 kubetail serve
 ]]></description>
-    <releaseNotes>https://github.com/kubetail-org/kubetail/compare/cli/v0.5.0...cli/v0.5.1</releaseNotes>
+    <releaseNotes>https://github.com/kubetail-org/kubetail/releases/tag/cli%2Fv0.7.3</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
