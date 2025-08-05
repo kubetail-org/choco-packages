@@ -1,0 +1,35 @@
+name: publish
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+            fetch-depth: 0
+
+      - name: Configure API key
+        shell: pwsh
+        env:
+          CHOCOLATEY_API_KEY: ${{ secrets.CHOCOLATEY_API_KEY }}
+        run: |
+          choco apikey --source https://push.chocolatey.org/ --key $env:CHOCOLATEY_API_KEY
+
+      - name: Pack Chocolatey package
+        shell: pwsh
+        run: |
+          choco pack
+
+      - name: Push to Chocolatey
+        shell: pwsh
+        run: |
+          choco push kubetail/kubetail.nupkg --source https://push.chocolatey.org/
