@@ -32,4 +32,4 @@ jobs:
       - name: Push to Chocolatey
         shell: pwsh
         run: |
-          choco push .\*.nupkg --source https://push.chocolatey.org/
+          choco push .\kubetail.0.7.3.nupkg --source https://push.chocolatey.org/
