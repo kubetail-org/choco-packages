@@ -27,9 +27,9 @@ jobs:
       - name: Pack Chocolatey package
         shell: pwsh
         run: |
-          choco pack
+          choco pack .\kubetail\kubetail.nuspec
 
       - name: Push to Chocolatey
         shell: pwsh
         run: |
-          choco push kubetail/kubetail.nupkg --source https://push.chocolatey.org/
+          choco push *.nupkg --source https://push.chocolatey.org/
