@@ -1,9 +1,9 @@
 $toolsDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
-# helper from Chocolatey; returns 'X86', 'X64' or 'Arm64'
-$osArch = Get-OSArchitecture
+# Dectect drchitecture (9 = x64 (AMD64), 12 = ARM64)
+$osArch = (Get-CimInstance Win32_Processor).Architecture
 
-if ($osArch -eq 'Arm64') {
+if ($osArch -eq 12) {
     $url      = 'https://github.com/kubetail-org/kubetail/releases/download/cli%2Fv0.7.3/kubetail-windows-arm64'
     $checksum = '59d63dda2d11f5dc55ef120c7dbac7e7e1daa5ffef93f262d7746d624183c564'
 }
