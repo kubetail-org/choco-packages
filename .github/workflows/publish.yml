@@ -22,7 +22,8 @@ jobs:
         shell: pwsh
         run: |
           [xml]$nuspec = Get-Content ".\kubetail\kubetail.nuspec"
-          "version=$nuspec.package.metadata.version" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+          $version = $nuspec.package.metadata.version
+          "version=$version" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
 
       - name: Configure API key
         shell: pwsh
