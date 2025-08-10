@@ -17,6 +17,14 @@ jobs:
         with:
             fetch-depth: 0
 
+      - name: Get version number
+        id: nuspec
+        shell: pwsh
+        run: |
+          [xml]$nuspec = Get-Content ".\kubetail\kubetail.nuspec"
+          $version = $nuspec.package.metadata.version
+          "version=$version" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+
       - name: Configure API key
         shell: pwsh
         env:
@@ -32,4 +40,4 @@ jobs:
       - name: Push to Chocolatey
         shell: pwsh
         run: |
-          choco push .\kubetail.*.nupkg --source https://push.chocolatey.org/
+          choco push .\kubetail.${{ steps.nuspec.outputs.version }}.nupkg --source https://push.chocolatey.org/
