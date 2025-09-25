@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>kubetail</id>
-    <version>0.7.5</version>
+    <version>0.8.0</version>
     <packageSourceUrl>https://github.com/kubetail-org/choco-packages</packageSourceUrl>
     <owners>Andres Morey</owners>
     <title>Kubetail (CLI)</title>
@@ -31,7 +31,7 @@ kubetail help
 kubetail logs
 kubetail serve
 ]]></description>
-    <releaseNotes>https://github.com/kubetail-org/kubetail/releases/tag/cli%2Fv0.7.5</releaseNotes>
+    <releaseNotes>https://github.com/kubetail-org/kubetail/releases/tag/cli%2Fv0.8.0</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

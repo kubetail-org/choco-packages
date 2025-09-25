@@ -4,12 +4,12 @@ $toolsDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
 $osArch = (Get-CimInstance Win32_Processor).Architecture
 
 if ($osArch -eq 12) {
-    $url      = 'https://github.com/kubetail-org/kubetail/releases/download/cli%2Fv0.7.5/kubetail-windows-arm64'
-    $checksum = 'a232dee5ecb351c623b6e9bf23b060e71b68739b8b9c00d5915b6dad1994634c'
+    $url      = 'https://github.com/kubetail-org/kubetail/releases/download/cli%2Fv0.8.0/kubetail-windows-arm64'
+    $checksum = 'e8106f7773b4d9b3f95443435b1a3aea054e23f87afa6cc06f328766f0dc3489'
 }
 else {
-    $url      = 'https://github.com/kubetail-org/kubetail/releases/download/cli%2Fv0.7.5/kubetail-windows-amd64'
-    $checksum = '94ea13b25845efb3c7694ea8c87021d0d0014ad683f9aff7eb7e50735125f908'
+    $url      = 'https://github.com/kubetail-org/kubetail/releases/download/cli%2Fv0.8.0/kubetail-windows-amd64'
+    $checksum = 'd460ffca614dd730f096325f911d1444703c884339b59c102f0e54695a9c6f3c'
 }
 
 $packageArgs = @{
